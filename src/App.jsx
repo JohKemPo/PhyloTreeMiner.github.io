@@ -103,7 +103,7 @@ function App() {
               justifyContent: "space-between",
             }}
           >
-            <a href="/PhyloTreeMiner.github.io">
+            <Link to="/">
               <div
                 className="logo-container"
                 style={{
@@ -130,7 +130,7 @@ function App() {
                   </Title>
                 )}
               </div>
-            </a>
+            </Link>
 
             <Menu
               mode="inline"
