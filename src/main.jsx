@@ -14,7 +14,7 @@ const NotFoundPage = () => (
     subTitle="Sorry, the page you visited has not been implemented yet or does not exist."
     extra={
       <Button type="primary">
-        <Link to="/">Back to Homepage</Link>
+        <Link to="/PhyloTreeMiner.github.io">Back to Homepage</Link>
       </Button>
     }
   />
@@ -43,7 +43,7 @@ createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <HashRouter>
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route path="/PhyloTreeMiner.github.io" element={<HomePage />} />
         <Route path="/doc" element={<DocumentationHome />} />
       </Routes>
     </HashRouter>

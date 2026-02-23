@@ -39,7 +39,7 @@ function App() {
   };
 
   const menuItems = [
-    { key: "/", icon: <HomeOutlined />, label: <Link to="/">Home</Link> },
+    { key: "/PhyloTreeMiner.github.io", icon: <HomeOutlined />, label: <Link to="/">Home</Link> },
     // { key: '/Dashboards', icon: <AppstoreOutlined />, label: <Link to="/Dashboards">Dashboard</Link> },
     {
       key: "/projects",
@@ -103,7 +103,7 @@ function App() {
               justifyContent: "space-between",
             }}
           >
-            <Link to="/">
+            <Link to="/PhyloTreeMiner.github.io">
               <div
                 className="logo-container"
                 style={{
