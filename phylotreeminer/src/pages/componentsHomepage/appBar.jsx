@@ -1,0 +1,82 @@
+import Box from '@mui/material/Box';
+import AppBar from '@mui/material/AppBar';
+import Container from '@mui/material/Container';
+import Toolbar from '@mui/material/Toolbar';
+import Typography from '@mui/material/Typography';
+import Tooltip from '@mui/material/Tooltip';
+import { useNavigate } from 'react-router-dom';
+import Button from '@mui/material/Button';
+
+import {
+
+    Link,
+
+} from '@mui/material';
+
+import Logo from './logo';
+
+const AppAppBar = () => {
+    const navigate = useNavigate();
+
+    const handleGoToDocs = () => {
+        navigate('/doc');
+    };
+
+    
+    return (
+        <AppBar
+            position="fixed"
+            sx={{
+                boxShadow: 0,
+                bgcolor: 'transparent',
+                backgroundImage: 'none',
+                mt: 2,
+            }}
+        >
+            <Container style={{ maxWidth: '80vw' }}>
+                <Toolbar
+                    variant="regular"
+                    sx={(theme) => ({
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'space-between',
+                        flexShrink: 0,
+                        borderRadius: '8px',
+                        bgcolor: theme.palette.mode === 'light'
+                            ? 'rgba(255, 255, 255, 0.4)'
+                            : 'rgba(0, 0, 0, 0.4)',
+                        backdropFilter: 'blur(10px)',
+                        maxHeight: 40,
+                        border: '1px solid',
+                        borderColor: 'divider',
+                        boxShadow: `0 0 1px rgba(85, 166, 246, 0.1), 1px 1.5px 2px -1px rgba(85, 166, 246, 0.15), 4px 4px 12px -2.5px rgba(85, 166, 246, 0.15)`,
+                    })}
+                >
+                    <Box sx={{ flexGrow: 1, display: 'flex', alignItems: 'center', px: 0 }}>
+                        <Logo />
+                        <Link href='/' underline="none">
+                            <Typography variant="h6" component="div" sx={{
+                                ml: 2, fontWeight: 'bold', mr: 3,
+                                color: (theme) => theme.palette.mode === 'light' ? 'primary.main' : 'primary.light',
+                            }} >
+                                PhyloTreeMiner
+                            </Typography>
+                        </Link>
+                        
+                    </Box>
+                    <Box sx={{ display: { xs: 'none', md: 'flex' }, gap: 3, alignItems: 'center' }}>
+                        <Tooltip title="GitHub Project">
+                            <Button  onClick={handleGoToDocs}>
+                                Documentation
+                            </Button>
+                        </Tooltip>
+
+                        
+                    </Box>
+                </Toolbar>
+            </Container>
+        </AppBar>
+    );
+};
+
+export default AppAppBar;
