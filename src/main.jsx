@@ -43,7 +43,7 @@ createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <HashRouter>
       <Routes>
-        <Route path="/PhyloTreeMiner.github.io" element={<HomePage />} />
+        <Route path="/" element={<HomePage />} />
         <Route path="/doc" element={<DocumentationHome />} />
       </Routes>
     </HashRouter>
