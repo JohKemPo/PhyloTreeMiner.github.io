@@ -103,7 +103,7 @@ function App() {
               justifyContent: "space-between",
             }}
           >
-            <Link to="/">
+            <Link to="/PhyloTreeMiner.github.io">
               <div
                 className="logo-container"
                 style={{
