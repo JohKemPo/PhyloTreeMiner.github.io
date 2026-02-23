@@ -126,7 +126,7 @@ function App() {
                       whiteSpace: "nowrap",
                     }}
                   >
-                    PhyloTreeMiner
+                    PhyloTreeMiner 
                   </Title>
                 )}
               </div>
