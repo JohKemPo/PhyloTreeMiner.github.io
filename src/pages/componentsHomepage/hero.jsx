@@ -73,7 +73,7 @@ const Hero = () => {
                         sx={{ pt: 2, width: { xs: '100%', sm: 'auto' } }}
                     >
                   
-                        <Button variant="outlined" color="primary" href='https://github.com/UFFeScience/NMFSt.P' target="_blank" startIcon={<GitHubIcon/>}>
+                        <Button variant="outlined" color="primary" href='https://github.com/UFFeScience/phylotreeminer' target="_blank" startIcon={<GitHubIcon/>}>
                             Github
                         </Button>
                         
